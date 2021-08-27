@@ -433,7 +433,7 @@ type AddressConnection {
   You can request the `nodes` directly to avoid the extra wrapping that `NodeEdge` has,
   if you know you will not need to paginate the results.
   """
-  nodes: [Address]
+  nodes: [CustomAddress]
   "Information to help a client request the next or previous page"
   pageInfo: PageInfo!
   "The total number of nodes that match your query"
@@ -445,5 +445,5 @@ type AddressEdge {
   "The cursor that represents this node in the paginated results"
   cursor: ConnectionCursor!
   "The address"
-  node: Address
+  node: CustomAddress
 }
